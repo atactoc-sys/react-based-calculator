@@ -12,7 +12,6 @@ A simple calculator built with React and mathjs.
 - [Usage](#usage)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -40,7 +39,24 @@ To start the development server:
 
 ```bash
 npm start
+```
 
+## Testing
+
+Run tests using:
+```bash
+npm test
+```
+
+## Contributing
+
+Feel free to contribute to this project. Follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature`.
+4. Push to the branch: `git push origin feature/new-feature`.
+5. Submit a pull request.
 
 #Getting Started with Create React App
 
