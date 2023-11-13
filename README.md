@@ -48,7 +48,7 @@ Run tests using:
 npm test
 ```
 
-## Contributing
+# Contributing
 
 Feel free to contribute to this project. Follow these steps:
 
