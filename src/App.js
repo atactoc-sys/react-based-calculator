@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+/**
+ * The App function returns a div element containing a Calculator component.
+ * @returns The App component is returning a div with the className "App" and a Calculator component.
+ */
+import "./App.css";
+import Calculator from "./Components/Calculator/Calculator";
 
 function App() {
   return (
+    /* The code is creating a div element with the class name "App" and rendering a Calculator component
+   inside it. */
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Calculator />
     </div>
   );
 }
 
+/* `export default App;` is exporting the `App` component as the default export of the module. This
+means that when another module imports this module, it will receive the `App` component as the
+default export. */
 export default App;

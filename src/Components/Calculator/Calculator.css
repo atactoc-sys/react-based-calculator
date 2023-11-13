@@ -1,0 +1,174 @@
+/* The CSS code you provided is defining the styles for a calculator interface. */
+/* The `.calculator` class is defining the styles for a calculator container. */
+.calculator {
+    width: 100% auto;
+    margin: 0px;
+    padding: 60px;
+    display: flex;
+    background-color: #1d1716;
+    align-items: center;
+}
+
+/* The `.calNav` class is defining the styles for a navigation element in the calculator interface. */
+.calNav {
+    position: relative;
+    color: #FAECE2;
+    font-size: 40px;
+    letter-spacing: 10px;
+    width: 40%;
+    
+    height: 500px;
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+/* The `.calNav::before` selector is creating a pseudo-element that is inserted before the content of
+the `.calNav` element. */
+.calNav::before {
+    content: "";
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border: 1px solid red;
+    border-radius: 20px;
+    
+}
+/* The `.calCont` class is defining the styles for a calculator container. */
+.calCont {
+    height: auto;
+    width: 60%;
+    margin: 10px;
+    padding: 30px;
+    display: block;
+    justify-content: baseline;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+/* The `.input-display` class is defining the styles for an input display element in the calculator
+interface. */
+.input-display {
+    width: 100% auto;
+    height: auto;
+    margin: 10px;
+    padding: 30px 30px 0 30px;
+    background-color: transparent;
+}
+
+
+/* The CSS code `.input-display input[type="text"]` is targeting an input element of type "text" that
+is inside an element with the class "input-display". It is defining the styles for this specific
+input element. */
+.input-display input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #f3bc77;
+    font-size: 60px;
+    text-align: left;
+    letter-spacing: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+/* The `.result-display` class is defining the styles for a result display element in the calculator
+interface. */
+.result-display {
+    width: 100% auto;
+    padding: 10px;
+    background-color: transparent;
+    color: #f3bc77;
+    font-size: 60px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: right;
+    margin: 40px;
+}
+/* The CSS code you provided is defining the styles for a set of buttons in the calculator interface. */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0;
+    
+}
+
+/* The CSS code `.buttons button` is targeting all button elements that are inside an element with the
+class "buttons". It is defining the styles for these specific button elements. */
+.buttons button {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    color: #f3bc77;
+    font-size: 24px;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* The CSS code `.buttons button:hover` is targeting all button elements that are inside an element
+with the class "buttons" when they are being hovered over by the user. It is defining the styles for
+these specific button elements when they are in the hover state. */
+.buttons button:hover {
+    background-color: #a55233;
+    transform: scale(1.05);
+}
+
+/* The CSS code `.buttons button:active` is targeting all button elements that are inside an element
+with the class "buttons" when they are in the active state, meaning when they are being clicked or
+pressed by the user. */
+.buttons button:active {
+    transform: scale(0.95);
+    background-color: #402a23;
+}
+
+/* The `@media` rule in CSS is used to apply different styles based on the characteristics of the
+device or screen size. In this case, the `@media screen and (max-width: 768px)` rule is targeting
+screens with a maximum width of 768 pixels. */
+@media screen and (max-width: 768px) {
+    /* The CSS code you provided is using a media query to apply different styles to the calculator
+    interface when the screen width is less than or equal to 768 pixels. */
+    .calculator {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .calNav{
+        height: 5px;
+        width: 100%;
+    }
+    .calCont {
+        width: 100%;
+    }
+
+    .input-display input[type="text"],
+    .result-display {
+        font-size: 40px;
+    }
+
+    .buttons button {
+        height: 50px;
+        font-size: 18px;
+    }
+}
+
