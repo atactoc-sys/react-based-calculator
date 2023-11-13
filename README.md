@@ -58,7 +58,7 @@ Feel free to contribute to this project. Follow these steps:
 4. Push to the branch: `git push origin feature/new-feature`.
 5. Submit a pull request.
 
-#Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
