@@ -1,4 +1,48 @@
-# Getting Started with Create React App
+# React-based Calculator
+
+![Project Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![React Version](https://img.shields.io/badge/react-18.2.0-blue.svg)
+![License](https://img.shields.io/badge/license-Private-red.svg)
+
+A simple calculator built with React and mathjs.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/react-based-calculator.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd react-based-calculator
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To start the development server:
+
+```bash
+npm start
+
+
+#Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
